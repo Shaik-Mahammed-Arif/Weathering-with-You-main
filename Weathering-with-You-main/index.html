@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weathering with u</title>
+    <link rel="stylesheet" href="CSS.css"/>
+    <link rel="website icon" type="png" href="https://img.freepik.com/free-vector/sunny-rainy-cloudy-weather-icons_1308-126268.jpg?w=740&t=st=1700160288~exp=1700160888~hmac=37aea797b676d4889f5348d4d46e77fc41d05de44f6b1336dfe022327d6698b8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/19fd651da1.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    
+        <div  class="mode-container d-flex flex-column justify-content-center">
+            <div class="mode-switch">
+                <input type="checkbox" class="checkbox" id="toggleBtn" />
+                    <label class="switch" for="toggleBtn">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                    </label>
+              </div>
+        <h1 class="heaingclass">Accurate Updates from Every Corner of the World<br><span class="heading-span">Weathering with You </span>.</h1>
+
+
+          <div id="weatherCard" class="weather-card">
+            <div class="d-flex flex-row justify-content-center ">
+                <input id="citySearchInputEle" class="inputStyle" placeholder="Enter a city name">
+                <button id="searchBtn" onclick="fetchingAndUpdating()" class="searchLogo"><img class="searchLogoImage" src="https://i.ibb.co/wydSs4q/search.png"></button>
+            </div>
+            <img id="weatherImageElement" class="weatherImage" src="https://i.ibb.co/zr2KQDw/mist.png">
+            <p id="weatherTypeTxtElement" class="weather-card-para"></p>
+            <h1 id="weatherTemperatureTxtElement" class="weather-card-heading"></h1>
+            <h1 id="cityNameElement" class="weather-card-place"></h1>
+            <div class="d-flex flex-row bottom-section">
+                <div class="d-flex flex-row">
+                    <img class="humidity-image" src="https://i.ibb.co/M8rJdtX/humidity.png">
+                    <div class="humidity-section">
+                        <h1 id="humidPerEle" class="humidity-heading"></h1>
+                        <p class="humidity-para">humidity</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-row">
+                        <img class="humidity-image" src="https://i.ibb.co/Q8PQNmY/wind.png">
+                        <div class="humidity-section">
+                            <h1 id="windPerEle" class="humidity-heading"></h1>
+                            <p class="humidity-para">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="Javasc.js"></script>
+</body>
+
+</html>
